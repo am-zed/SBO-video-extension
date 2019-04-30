@@ -43,15 +43,7 @@ sboModule.drawService = (function () {
                 'left: 0px;' +
                 'display: none;';
 
-            let dialog = $('<div>').attr('style', dialogStyle + ';display: none;');
-
-            $(document).click(function (e) {
-                if (e.target === dldBtn[0] || e.target === dldBtnIcon[0]) {
-                    dialog.attr('style', dialogStyle + ';display: inline;')
-                } else {
-                    dialog.attr('style', dialogStyle + ';display: none;');
-                }
-            });
+            let dialog = $('<div>').attr('style', dialogStyle + ';display: inline;');
 
             dialog.insertAfter($(dldBtn));
 
